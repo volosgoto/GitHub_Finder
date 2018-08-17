@@ -3,6 +3,9 @@
  * @version 1.0
  */
 
+// Init
+let github = new Github();
+
  // Search input
  let searchUser = document.getElementById('searchUser');
  
@@ -11,7 +14,10 @@
     // Get input text
     let userText = e.target.value;
     if (userText !== '') {
-        console.log(userText);
-        
+        // console.log(userText);
+        // Make http call
+        github.getUser()
+            .then(data => {console.log(data);}
+        );
     }
  });
