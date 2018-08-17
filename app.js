@@ -16,8 +16,20 @@ let github = new Github();
     if (userText !== '') {
         // console.log(userText);
         // Make http call
-        github.getUser()
-            .then(data => {console.log(data);}
+        github.getUser(userText)
+            .then(data => {
+                
+                // console.log(data);
+                               
+                if (data.profile.messge == 'Not Found'){
+                    // Show alert
+                } else {
+                    //Show pofile
+                }
+
+            }
         );
+    } else {
+        // Clear profile
     }
  });
