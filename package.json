@@ -2,11 +2,14 @@
   "name": "GitHub_Finder",
   "version": "1.0.0",
   "main": "index.js",
-  "homepage": "https://volosgoto/github.io/GitHub_Finder",
+  "homepage": "https://volosgoto.github.io/GitHub_Finder",
   "repository": "https://github.com/volosgoto/GitHub_Finder.git",
   "author": "volosgoto <volosgoto@yahoo.com>",
   "license": "MIT",
   "dependencies": {
     "gh-pages": "^2.0.1"
+  },
+  "scripts": {
+    "deploy": "yarn run build"
   }
 }
